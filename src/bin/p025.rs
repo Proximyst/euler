@@ -9,7 +9,8 @@ fn main() {
             .enumerate()
             .find(|(_, k)| k >= &BigUint::from(1000u32))
             .unwrap()
-            .0 + 1
+            .0
+            + 1
     );
 }
 
