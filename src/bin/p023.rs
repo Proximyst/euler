@@ -23,7 +23,10 @@ fn main() {
 }
 
 fn sum_divisors(u: u64) -> u64 {
-    (1..u / 2 + 1).into_par_iter().filter(|n| u % n == 0).sum::<u64>()
+    (1..u / 2 + 1)
+        .into_par_iter()
+        .filter(|n| u % n == 0)
+        .sum::<u64>()
 }
 
 fn is_abundant(n: u64) -> bool {
