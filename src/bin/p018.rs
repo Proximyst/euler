@@ -98,8 +98,10 @@ fn parse_tree(s: &str) -> Node {
 
 #[test]
 fn test_parse() {
-    let mut tree = parse_tree("50
+    let mut tree = parse_tree(
+        "50
 30 70
-5 3 1");
+5 3 1",
+    );
     assert_eq!(123, tree.best_value());
 }

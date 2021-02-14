@@ -1,4 +1,4 @@
-use num::{ One as _, BigUint };
+use num::{BigUint, One as _};
 
 fn main() {
     println!("{}", calc(20));
