@@ -1,6 +1,5 @@
 use once_cell::sync::Lazy;
 use rayon::prelude::*;
-use std::collections::HashMap;
 
 const MAX: usize = 10usize.pow(6);
 
